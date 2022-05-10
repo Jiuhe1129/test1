@@ -1,0 +1,56 @@
+*{margin: 0;padding: 0; transition: .6s;}
+a,li{list-style: none;text-decoration: none;}
+
+.nav{width: 80%; color: rgba(255, 255, 255, 0.5); position: absolute; left: 50%; margin-left: -38%; display: flex; justify-content: space-around; flex-wrap: wrap; line-height: 100px;}
+.nav .logo img{position: relative; top: 20px;}
+.nav .logo a{margin: 0 20px; color: white;}
+.nav .dh ul{display: flex; flex-wrap: wrap;}
+.nav .dh ul li{width: 120px; text-align: center; line-height: 100px;}
+.nav .dh .btn{width: 150px;}
+.nav .dh button{width: 63px; height: 27px; color: white; border: none; border-radius: 50px 50px; background: #6073f4;}
+
+.banner {width: 100%; height: 730px; color: white; background: url(img/banner.jpg); overflow: hidden;}
+.wz{width: 40%; position: relative; left: 20%; top: 25vh;}
+.img{position: relative; left: 60%; top: -5vh;}
+
+.w1 dl{line-height: 80px;}
+.w1 dt{font-size: 50px;}
+.w1 dd{font-size: 19px;}
+.wz button{width: 200px; height: 50px; border: none; font-size: 20px; border-radius: 10px 10px 10px 10px; color: white; background: #8290f4;}
+.w2{display: none;}
+
+.box1{background: #f4f4f4;}
+.title{width: 70%; margin: 0 auto; text-align: center;}
+.bt{font-size: 50px; font-weight: 100; padding-top: 20px;}
+.x{width: 100px;height: 3px; margin: 20px auto; background: #8290f4;}
+.title .p{font-size: 18px; color: #b3b3b3; margin: 30px auto;}
+
+.c1{width: 70%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around;}
+.c1 dl{width: 380px; height: 205px; padding: 0px 20px; margin: 50px 0; text-align: center; background: white;;}
+.c1 dt{width: 80px; height: 80px; position: relative; top: -35px; margin: 0 auto; border-radius: 100px; line-height: 115px;}
+.c1 dd{margin: 10px 0; line-height: 25px;}
+.c1 .hui{color: #b3b3b3;}
+
+.c2{width: 70%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center;}
+.c2 dl{width: 380px; height: 205px; margin: 50px 0; text-align: center;}
+.c2 dt{line-height: 205px;}
+.c2 dt{width: 155px; height: 155px; position: relative; top: -35px; margin: 0 auto; border-radius: 100px;}
+
+
+.qianlv{background: #2ec4cb;}
+.lan{background: #01bff3;}
+.cheng{background: #f26623;}
+.hong{background: #e52c51;}
+.lv{background: #2baf68;}
+.zi{background: #6273f4;}
+
+@media screen and (max-width: 960px) {
+    .nav{display: none;}
+    .w1{display: none;}
+    .img{display: none;}
+    .w2{display: block; top: 8vh; left: 5%; width: 90%;}
+    .w2 dt{font-size: 30px;}
+    .w2 dt,.w2 dd{margin: 10px;}
+    .w2 button{height: 35px; font-size: 17px;}
+    .banner{height: 250px;}
+}
