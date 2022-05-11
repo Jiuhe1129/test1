@@ -12,28 +12,38 @@
 <body>
     <div class="box">
         <div class="header">
-            <nav>
-                <div class="nav">
-                    <div class="logo">
-                        <img src="img/loge.jpg" alt="">
-                        <a href="">ZT云流量</a>
-                    </div>
-                    <div class="dh">
-                        <ul>
-                            <li>网站首页</li>
-                            <li>产品介绍</li>
-                            <li>软件安装</li>
-                            <li>常见问题</li>
-                            <li>云免服务器</li>
-                            <!-- <li class="btn">登录</li>
-                            <li class="btn">注册</li> -->
-                            <li class="btn"><button>登录</button>
-                                <button>注册</button>
-                            </li>
-                        </ul>
-                    </div>
+            <div id="nav-y" class="nav-y">
+                <div class="logo">
+                    <img src="img/loge.jpg" alt="">
+                    <span>ZT云流量</span>
                 </div>
-            </nav>
+                <div id="dj">X</div>
+            </div>
+            <div id="nav" class="nav">
+                <div class="nav-x">
+                <div class="logo">
+                    <img src="img/loge.jpg" alt="">
+                    <a href="">ZT云流量</a>
+                </div>
+                <div id="dx">X</div>
+            </div>
+                <div class="dh">
+                    <ul>
+                        <li class="l">网站首页</li>
+                        <li class="l">产品介绍</li>
+                        <li class="l">软件安装</li>
+                        <li class="l">常见问题</li>
+                        <li class="l">云免服务器</li>
+                        <!-- <li class="btn">登录</li>
+                            <li class="btn">注册</li> -->
+                        <li class="btn-x"><button>登录</button>
+                            <button>注册</button>
+                        </li>
+                        <li class="btn-y"><button>登录</button></li>
+                        <li class="btn-y"><button>注册</button></li>
+                    </ul>
+                </div>
+            </div>
             <div class="banner">
                 <div class="banner-content">
                     <div class="wz w1">
@@ -43,7 +53,7 @@
                             <dd><button>查看安装流程</button></dd>
                         </dl>
                     </div>
-            <div class="wz w2">
+                    <div class="wz w2">
                         <dl>
                             <dt>安卓系统完美支持</dt>
                             <dd>操作人性化，流量上手很简单，使用仅需简单操作几步</dd>
@@ -120,5 +130,34 @@
     </div>
     </div>
 </body>
+<script>
+    var dj = document.getElementById("dj");
+    var dx = document.getElementById("dx")
+    function nav() {
+        var nav = document.getElementById("nav");
+        nav.style.display = "block";
+    }
+    function navy(){
+        var navy = document.getElementById("nav-y");
+        navy.style.display = "none"
+    }
+    function nava() {
+        var nav = document.getElementById("nav");
+        nav.style.display = "none";
+    }
+    function navx(){
+        var navy = document.getElementById("nav-y");
+        navy.style.display = "flex"
+    }
+    dj.onclick = function () {
+        nav();
+        navy();
+    }
+
+    dx.onclick = function(){
+        nava();
+        navx();
+    }
+</script>
 
 </html>
