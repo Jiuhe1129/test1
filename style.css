@@ -2,6 +2,8 @@
 a,li{list-style: none;text-decoration: none;}
 
 .nav{width: 80%; color: rgba(255, 255, 255, 0.5); position: absolute; left: 50%; margin-left: -38%; display: flex; justify-content: space-around; flex-wrap: wrap; line-height: 100px;}
+.nav-y{display: none;}
+#dx{display: none;}
 .logo img{position: relative; top: 20px;}
 .nav .logo a{margin: 0 20px; color: white;}
 .nav .dh ul{display: flex; flex-wrap: wrap;}
@@ -61,7 +63,7 @@ a,li{list-style: none;text-decoration: none;}
     .nav-y span{position: relative; bottom: 20px;}
     #dj{line-height: 55px;}
     .nav-x{display: flex; justify-content: space-around;}
-
+    #dx{display: block;}
     .w1{display: none;}
     .img{display: none;}
     .w2{display: block; top: 8vh; left: 5%; width: 90%;}
